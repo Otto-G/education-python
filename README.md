@@ -10,3 +10,12 @@ Projects meant to learn more about python.
 # Dev-Container
 
 This code will be run in a development container for python to help keep the development environment consistent and allow for the different modules needed isolated. 
+
+# Benchmarking
+
+## [Mandelbrot benchmark](./Mandelbrot-benchmark.py) @ 16000
+
+| Computer | Time m:ss |
+| :-- | --: |
+| Ncase M1 - 5600x (dev container) | 1:15 |
+| iPad Air 4 | 6:30 |
