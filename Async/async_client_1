@@ -3,6 +3,9 @@ import socket
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.connect(("localhost", 1234))
 
+# Step 1 - Add line to prevent blocking by send
+sock.setblocking(0)
+
 data = "test\n".encode("utf8") * 10 * 1024 * 3  # Semi-large amount of data
 assert sock.send(data) == len(data)  # True
 
