@@ -17,7 +17,7 @@ while len(data):
         totalSent += sent
         data = data[sent:]
         print("sending data")
-    except socket.error, e:
+    except socket.error as e:
         if e.errno != errno.EAGAIN:
             raise e
         print("Blocking with %s data remaining" % (len(data)))
