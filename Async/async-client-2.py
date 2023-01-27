@@ -6,7 +6,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.connect(("localhost", 1234))
 sock.setblocking(0)
 
-data = "<(0_0<) <(0_0)> (>0_0)>".encode("utf8") * 10 * 1024 * 3  # Semi-large amount of data
+data = "<(0_0<) <(0_0)> (>0_0)>".encode("utf8") * 10 * 1024 * 35  # Semi-large amount of data
 dataSize = len(data)
 print("Bytes to send: %s" %(dataSize))
 
