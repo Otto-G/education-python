@@ -11,7 +11,7 @@ def boringTask():
         time.sleep(0.02)
         yield
 
-def sendDataTask(port, data)
+def sendDataTask(port, data):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect(("localhost", port))
     sock.setblocking(False)
@@ -42,4 +42,3 @@ if __name__ == '__main__':
         sendDataTask(port=5678, data='foobar')
     ]
 
-    
