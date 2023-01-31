@@ -41,4 +41,35 @@ if __name__ == '__main__':
         sendDataTask(port=1234, data='<(0_0<) <(0_0)> (>0_0)>'),
         sendDataTask(port=5678, data='foobar')
     ]
+    
+    fds = dict(w={}, r={})
+    while len(tasks) or len(fds['w']) or len(fds['r']):
+        newTasks = []
+        for task in tasks:
+            try:
+                resp = next(task)
+                try:
+                    iter(resp)
+                    fds[resp[0]][resp[1]] = task
+                except TypeError:
+                    # This task has to be done since it isn't depend on any fd.
+                    # Need to define what a fd is from the source info
+                    newTasks.append(task)
+            except StopIteration:
+                # function completed
+                pass
 
+        if len(fds['w'].keys()) or len(fds['r'].keys()):
+            readable, writeable, exceptional = select.select(fds['r'].keys(), 
+                                                             fds['w'].keys(),
+                                                             [],
+                                                             0)
+            for fd in writeable:
+                for readable_sock in readable:
+                    newTasks.append(fds['r'][fd])
+                    del(fds['r'][fd])
+                    newTasks.append(fds['w'][fd])
+                    del(fds['w'[fd]])
+        
+        tasks = newTasks
+            
