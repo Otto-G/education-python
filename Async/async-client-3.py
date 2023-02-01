@@ -58,18 +58,18 @@ if __name__ == '__main__':
             except StopIteration:
                 # function completed
                 pass
-
+        
         if len(fds['w'].keys()) or len(fds['r'].keys()):
             readable, writeable, exceptional = select.select(fds['r'].keys(), 
                                                              fds['w'].keys(),
                                                              [],
                                                              0)
+            for readable_sock in readable:
+                newTasks.append(fds['r'][readable_sock])
+                del(fds['r'][readable_sock])
             for fd in writeable:
-                for readable_sock in readable:
-                    newTasks.append(fds['r'][fd])
-                    del(fds['r'][fd])
-                    newTasks.append(fds['w'][fd])
-                    del(fds['w'[fd]])
+                newTasks.append(fds['w'][fd])
+                del(fds['w'][fd])
         
         tasks = newTasks
             
