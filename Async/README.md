@@ -55,3 +55,8 @@ It is very similar to the code used in [Client 2](./async-client-2.py) but has
 been turned into a general function that takes two inputs of a port and the data
 to be sent.  When there is an error from the server, it will yield and return to
 the `__main__` function to be called again later.  
+
+The main function starts by defining 3 tasks to run: `boring task`, and 2 
+sets of `sendDataTask` sending different text to the two ports that we set our 
+[async-server-1](./async-server-1.py) and [async-server-2](./async-server-2.py)
+to listen on.  
