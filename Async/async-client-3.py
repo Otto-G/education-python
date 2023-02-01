@@ -5,7 +5,7 @@ import time
 
 def boringTask():
     i = 0
-    while i < 20:
+    while i < 10:
         i += 1
         print(i)
         time.sleep(0.02)
