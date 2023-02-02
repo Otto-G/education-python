@@ -26,9 +26,9 @@ This code will be run in a development container for python to help keep the dev
 
 Run with `time python Mandelbrot-benchmark.py 1600 > /dev/null
 
-| Computer | Time m:ss |
-| :-- | --: |
-| Ncase M1 - 5600x (dev container) | 1:15 |
-| Macbook Pro M1 14" | 1:17 |
-| Dell 5420 i7-1185g7 | 1:53 |
-| iPad Air 4 | 6:30 |
+| Computer | Time m:ss | Percentage from Best | 
+| :-- | --: | --: | 
+| Ncase M1 - 5600x (dev container) | 1:15 | 100% | 
+| Macbook Pro 14" M1-pro (dev container) | 1:17 | 103% | 
+| Dell 5420 i7-1185g7 | 1:53 | 151% | 
+| iPad Air 4 | 6:30 | 520% | 
