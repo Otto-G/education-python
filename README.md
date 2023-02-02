@@ -24,6 +24,8 @@ This code will be run in a development container for python to help keep the dev
 
 ## [Mandelbrot benchmark](./Mandelbrot-benchmark.py) @ 16000
 
+Run with `time python Mandelbrot-benchmark.py 1600 > /dev/null
+
 | Computer | Time m:ss |
 | :-- | --: |
 | Ncase M1 - 5600x (dev container) | 1:15 |
