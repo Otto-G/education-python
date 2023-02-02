@@ -1,6 +1,6 @@
 # Education: Python
 
-Projects meant to learn more about python. 
+Projects meant to learn more about python. I want to go back to some of the beginning fundamentals that I missed by diving into the deep end and fill in some of my missing knowledge.  Learning in a more structured way will help with showing the missing areas and expanding my current knowledge.  
 
 # Topics
 
