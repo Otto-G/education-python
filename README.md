@@ -27,4 +27,5 @@ This code will be run in a development container for python to help keep the dev
 | Computer | Time m:ss |
 | :-- | --: |
 | Ncase M1 - 5600x (dev container) | 1:15 |
+| Macbook Pro M1 14" | 1:17 |
 | iPad Air 4 | 6:30 |
