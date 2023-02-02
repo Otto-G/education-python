@@ -60,16 +60,35 @@ if __name__ == '__main__':
                 pass
         
         if len(fds['w'].keys()) or len(fds['r'].keys()):
+
+            # Pulling in the tasks that are now able to be read, written, or 
+            # have cleared their exception.  
             readable, writeable, exceptional = select.select(fds['r'].keys(), 
                                                              fds['w'].keys(),
                                                              [],
                                                              0)
+
+            # Adding all of the the readable tasks to the task list
             for readable_sock in readable:
                 newTasks.append(fds['r'][readable_sock])
+                
+                # Once the task has been added to the task list, remove it from
+                # the pending task dictionary
                 del(fds['r'][readable_sock])
+
+            # Adding all of the writeable tasks to the task list
             for fd in writeable:
                 newTasks.append(fds['w'][fd])
+
+                # Once the task has been added to the task list, remove it from
+                # the pending task dictionary
                 del(fds['w'][fd])
+        
+        # Loops will be made when there are only pending items left and nothing 
+        # has cleared.  We need to filter those times out so that the output 
+        # isn't spammed with []
+        if len(newTasks) > 0:
+            print("newTasks = {}".format(newTasks))
         
         tasks = newTasks
             

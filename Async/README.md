@@ -48,15 +48,25 @@ connecting to a second server as well as running a local function.
 
 `boringTask` is a simple function that will just print out numbers every so many
 seconds to show that it is still running.  To keep from hogging up all of the 
-function time, it will yield every loop while it waits. 
+function time, it will `yield` every loop while it waits. The yielding nothing 
+after every loop is important to make sure that the other functions can be run 
+in the mean time.  Since there isn't anything else blocking this function, it 
+would normally run until finished.  
 
 The `sendDataTask` is the function that is used to connect to the two servers.  
 It is very similar to the code used in [Client 2](./async-client-2.py) but has 
 been turned into a general function that takes two inputs of a port and the data
-to be sent.  When there is an error from the server, it will yield and return to
-the `__main__` function to be called again later.  
+to be sent.  When there is an error from the server, it will `yield` and return 
+to the `__main__` function to be called again later.  When it yields, it returns 
+the current sock object so that it can be continued later on when it is no 
+longer blocked.  
 
 The main function starts by defining 3 tasks to run: `boring task`, and 2 
 sets of `sendDataTask` sending different text to the two ports that we set our 
 [async-server-1](./async-server-1.py) and [async-server-2](./async-server-2.py)
-to listen on.  
+to listen on.  From there it initializes `fds` which is a dictionary containing 
+the tasks that `select` will monitor and run.  
+
+The while loop is set to run so long as there are either tasks to do (starting
+with the initial tasks), or tasks that are ready for `'w'` writing or `'r'` 
+reading by the select function.  
