@@ -30,4 +30,5 @@ Run with `time python Mandelbrot-benchmark.py 1600 > /dev/null
 | :-- | --: |
 | Ncase M1 - 5600x (dev container) | 1:15 |
 | Macbook Pro M1 14" | 1:17 |
+| Dell 5420 i7-1185g7 | 1:53 |
 | iPad Air 4 | 6:30 |
