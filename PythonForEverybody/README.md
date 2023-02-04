@@ -8,3 +8,5 @@ My goal is to reinforce some of the fundamentals that I skipped when I dove into
 
 ## Chapter 1: Why should you learn to write programs?
 
+This chapter is mostly about what programming is and the introductory basics of how the santax works.  There are bits about how to install python and how to run "Hello World" as well as how to quit the terminal interperator.  
+
