@@ -12,8 +12,19 @@ This chapter is mostly about what programming is and the introductory basics of 
 
 There is a bit that goes over the differences between high level languages like Python, Javascript, Ruby, etc. and machine language.  The main feature of the high level languages is that they are able to be run on different sets of hardware without change because of interpreters in the middle that are able to create the machine code needed to run it on the specific system that it is actually used on.  There is a difference between interpreters that read the source code of a program and executes them on the fly and a compiler that need to have the whole program as one file which can then generate machine language code which can be run.  
 
-Errors will pop up while programming and it is important to distinguish between 
+Errors will pop up while programming and it is important to distinguish between: 
 
  - **Syntax Errors**: Errors that go against the rules of Python and cause an error during the runtime.  
  - **Logic Errors**: Errors that don't prevent the program from running, but do tasks in the wrong order and will create bad results.  
  - **Semantic Errors**: Errors that don't prevent the program from running and will appear to work correctly, but have wrong instructions (turn right instead of left)
+
+Debugging will need to be done to fix the errors.  There are four main things that can be tried to solve whatever issue there is:
+
+ - **Reading**: Looking at the code and reading it back to yourself to see if it matches what you wanted it to say.  
+ - **Running**: Make changes to the code and run it to see if it will display a helpful error that is more obvious than the first one.  This might require adding in some extra code like logging or printing to the terminal.  
+ - **Ruminating**: Taking some time to think about what type of error you're dealing with and what information you can get from the error messages.  What changes have been applied since it was last working and what areas could be impacted.  
+ - **Retreating**: Undo some changes and get it back to a working state.  From there it is possible to rebuild on a more solid foundation.  
+
+ Beginners often get stuck on thinking of one type of process instead of trying to use the other ones.  Sometimes it might be best to keep breaking the code down into smaller blocks so it can be easier to find errors and then fix them.  
+
+ The learning process is a journey.  It is ok if it takes time to really grasp the different concepts and commit them to memory.  It can take time to go from just understanding the basics to writing full and complex programs.  
