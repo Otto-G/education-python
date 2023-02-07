@@ -28,3 +28,25 @@ Debugging will need to be done to fix the errors.  There are four main things th
  Beginners often get stuck on thinking of one type of process instead of trying to use the other ones.  Sometimes it might be best to keep breaking the code down into smaller blocks so it can be easier to find errors and then fix them.  
 
  The learning process is a journey.  It is ok if it takes time to really grasp the different concepts and commit them to memory.  It can take time to go from just understanding the basics to writing full and complex programs.  
+
+ ## Chapter 2: Variables, expressions, and statements
+
+ **Variables** are words that hold a value in Python.  They can't start with numbers or contain illegal characters like "@" or use Python's list of reserved keywords...
+
+| <!-- --> | <!-- -->| <!-- --> | <!-- --> | <!-- --> | 
+| ---      | ---     | ---      | ---      | ---      | 
+| and      | del     | from     | None     | True     | 
+| as       | elif    | global   | nonlocal | try      | 
+| assert   | else    | if       | not      | while    | 
+| break    | except  | import   | or       | with     | 
+| class    | False   | in       | pass     | yield    |
+| continue | finally | is       | raise    | async    | 
+| def      | for     | lambda   | return   | await    | 
+
+**Statements** are lines of code that python can execute. 
+
+**Operators** are the mathematical symbols that can be used such as "+, -, *, /, and \*\*".  A list of operators can be found on [the python doc page](https://docs.python.org/3/library/operator.html#mapping-operators-to-functions).  The modulus "%" operator can be fairly useful since it will return the remainder after the first number has been divided by the second number.  This can identify numbers that are divisible by each other when the remainder is 0.  **Operands** are what the functions are being applied to.  
+
+**Expressions** is a combination of values, variables, and operators.  Expressions will be evaluated and displayed while using an interactive terminal, but won't do anything in a script since the only output from a script must be explicitly called.  
+
+Python follows *PEMDAS* for **Order of Operations** as that is the mathematical convention.  Parentheses should be added if there is any question about the order of operations as well as to help with readability.  
