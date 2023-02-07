@@ -54,3 +54,5 @@ Python follows *PEMDAS* for **Order of Operations** as that is the mathematical 
 Strings can also have some mathematical operations applied to them such as "+" which will concatenate two strings together or "\*" which will multiply the string by however number of times.  
 
 The input function can be used to get a user input and will resume the code when the user presses the enter button.  A string can be added in the middle of the function to have some text describe what is being prompted for.  
+
+Comments can be added in python by using the "#" mark.  This can be used either at the beginning of a line or towards the end of one since everything after the "#" will be ignored.  It can be good to let the code speak for itself when it can and use comments to describe why a bit of code is doing what it is doing.  That also means that the code needs to be structured so that it easy to read and understand.  Using mnemonic variable names will help aid in making the code readable from the start while comments can fill in the gaps of why is has been done the way it has.  
