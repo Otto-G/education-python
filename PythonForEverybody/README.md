@@ -50,3 +50,5 @@ Debugging will need to be done to fix the errors.  There are four main things th
 **Expressions** is a combination of values, variables, and operators.  Expressions will be evaluated and displayed while using an interactive terminal, but won't do anything in a script since the only output from a script must be explicitly called.  
 
 Python follows *PEMDAS* for **Order of Operations** as that is the mathematical convention.  Parentheses should be added if there is any question about the order of operations as well as to help with readability.  
+
+Strings can also have some mathematical operations applied to them such as "+" which will concatenate two strings together or "\*" which will multiply the string by however number of times.  
