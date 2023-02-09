@@ -1,8 +1,8 @@
-def celsiusToFahrenheit(celsius:float | int):
+def celsiusToFahrenheit(celsius:float | int) -> float:
     """
     celsiusToFahrenheit will take a temperature as a float and will
     return the corresponding value in Fahrenheit as a float"""
-
+    
     fahrenheit = celsius * 1.8 + 32
     return fahrenheit
 
