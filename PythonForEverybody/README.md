@@ -33,15 +33,15 @@ Debugging will need to be done to fix the errors.  There are four main things th
 
  **Variables** are words that hold a value in Python.  They can't start with numbers or contain illegal characters like "@" or use Python's list of reserved keywords...
 
-| <!-- --> | <!-- -->| <!-- --> | <!-- --> | <!-- --> | 
-| ---      | ---     | ---      | ---      | ---      | 
-| and      | del     | from     | None     | True     | 
-| as       | elif    | global   | nonlocal | try      | 
-| assert   | else    | if       | not      | while    | 
-| break    | except  | import   | or       | with     | 
-| class    | False   | in       | pass     | yield    |
-| continue | finally | is       | raise    | async    | 
-| def      | for     | lambda   | return   | await    | 
+| <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | 
+| ---      | ---      | ---      | ---      | ---      | 
+| and      | del      | from     | None     | True     | 
+| as       | elif     | global   | nonlocal | try      | 
+| assert   | else     | if       | not      | while    | 
+| break    | except   | import   | or       | with     | 
+| class    | False    | in       | pass     | yield    |
+| continue | finally  | is       | raise    | async    | 
+| def      | for      | lambda   | return   | await    | 
 
 **Statements** are lines of code that python can execute. 
 
@@ -56,3 +56,22 @@ Strings can also have some mathematical operations applied to them such as "+" w
 The input function can be used to get a user input and will resume the code when the user presses the enter button.  A string can be added in the middle of the function to have some text describe what is being prompted for.  
 
 Comments can be added in python by using the "#" mark.  This can be used either at the beginning of a line or towards the end of one since everything after the "#" will be ignored.  It can be good to let the code speak for itself when it can and use comments to describe why a bit of code is doing what it is doing.  That also means that the code needs to be structured so that it easy to read and understand.  Using mnemonic variable names will help aid in making the code readable from the start while comments can fill in the gaps of why is has been done the way it has.  
+
+## Chapter 3: Conditional Execution
+
+Conditionals start by using different comparison operators and return either `True` or `False`.  
+
+| <!--   --> | <!--                        --> |
+| ---------- | ------------------------------- | 
+| x == y     | x is equal to y                 | 
+| x != y     | x is __not__ equal to y         | 
+| x > y      | x is greater than y             | 
+| x < y      | x is less than y                | 
+| x >= y     | x is greater than or equal to y | 
+| x <= y     | x is less than or equal to y    | 
+| x is y     | x is the same as y              | 
+| x is not y | x is __not__ the same as y      | 
+
+\* Note that there is a slight difference between `==` and `is`.  `==` will compare the values, but `is` will compare the whole object.  
+
+These conditionals can be combined by using `and`, `or`, and `not`.  The meaning and usage of them is the same as standard English.  
