@@ -75,3 +75,12 @@ Conditionals start by using different comparison operators and return either `Tr
 \* Note that there is a slight difference between `==` and `is`.  `==` will compare the values, but `is` will compare the whole object.  
 
 These conditionals can be combined by using `and`, `or`, and `not`.  The meaning and usage of them is the same as standard English.  
+
+As many functions end up needing some form of logic to process information, these conditional statements are often used in `if` statements.  They have the below structure:
+
+```python
+if x > 0:
+    print('x is positive')
+```
+
+The `if` command is followed by a conditional of some kind and then ended with a colon `:`.  From there, the next line needs to be indented along with any other line that is intended to be included in the `if` statement.  This structure is the same as `for` loops.  
