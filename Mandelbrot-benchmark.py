@@ -59,7 +59,12 @@ def ordered_rows(rows, n):
 def compute_rows(n, f):
     row_jobs = ((y, n) for y in range(n))
 
-    if cpu_count() < 2:
+    numProcessors = cpu_count()
+
+    if numProcessors is None:
+        raise SystemError
+
+    if numProcessors < 2:
         yield from map(f, row_jobs)
     else:
         from multiprocessing import Pool
