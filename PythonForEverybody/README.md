@@ -61,7 +61,7 @@ Comments can be added in python by using the "#" mark.  This can be used either 
 
 Conditionals start by using different comparison operators and return either `True` or `False`.  
 
-| <!--   --> | <!--                        --> |
+| Code       | Meaning                         |
 | ---------- | ------------------------------- | 
 | x == y     | x is equal to y                 | 
 | x != y     | x is __not__ equal to y         | 
