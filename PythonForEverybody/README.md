@@ -98,3 +98,18 @@ else:
 
 The above `elif` statement will only be run if `x <= 0` and the `else` statement will only run if `x < 0`.  
 
+### Catching Exceptions
+
+When functions are created, they can often throw errors if the wrong inputs are given.  This isn't really a concern when working in a live interpreter, but when a script is being created, this can cause issues.  `try` and `except` are conditionals that are in python to allow the ability to catch errors and deal with them.  The are best used for user input areas to ensure valid inputs or for calling external resources that might return unexpected values.  
+
+### Short-circuit Evaluation of Logical Expressions
+
+As python evaluates statements from left to right, if there is an `and` statement where the first conditional is `False`, the second (or more) conditional(s) will be discarded.  This can lead to _guardian patterns_ where the first statement will block execution of a second (or more) statement.  The below code prevents an error from being thrown because `y` is confirmed to be a 0 before it can be used in a division throwing a `ZeroDivisionError`.  
+
+```python
+x = 1
+y = 0
+x >= 2 and y != 0 and (x/y) > 2
+
+False
+```
