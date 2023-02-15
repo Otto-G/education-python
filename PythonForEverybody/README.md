@@ -83,4 +83,18 @@ if x > 0:
     print('x is positive')
 ```
 
-The `if` command is followed by a conditional of some kind and then ended with a colon `:`.  From there, the next line needs to be indented along with any other line that is intended to be included in the `if` statement.  This structure is the same as `for` loops.  
+The `if` command is followed by a conditional of some kind and then ended with a colon `:`.  From there, the next line needs to be indented along with any other line that is intended to be included in the `if` statement.  This structure is the same as `for` loops.  `pass` can be used along with a comment if the logic is just being implemented but the code isn't finished yet.  
+
+`if` statements can be extended with alternate executions by using `else` or additional conditions can be chained by using `elif`.  `elif` is a shorter notation of "else if".  The `elif` commands can only be after the initial `if` command and `else` commands can only be at the end of a string of conditionals.  The conditions will always be checked in order and once one is true, the rest will be ignored.  The conditionals can also be nested as many times as desired but that can start to become difficult to read.  Ideally, code is kept to 3 indentations or less.  
+
+```python
+if x > 0:
+    print('x is positive')
+elif x == 0:
+    print('x is 0')
+else:
+    print('x is negative')
+```
+
+The above `elif` statement will only be run if `x <= 0` and the `else` statement will only run if `x < 0`.  
+
