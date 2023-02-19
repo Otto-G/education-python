@@ -116,4 +116,7 @@ False
 
 ## Chapter 4: Functions
 
+Functions are series of commands that perform some kind of computation.  When a funciton is defined the name and the arguments that are needed in order to perform the computation.  
+
+There are several built-in functions in python that can be used.  Those built in functions should be treated as reserved words and shouldn't be used.  
 
