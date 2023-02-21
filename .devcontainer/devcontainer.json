@@ -3,7 +3,20 @@
 {
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:0-3.11"
+	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.pylint",
+				"ms-python.python",
+				"ms-python.isort",
+				"alefragnani.project-manager",
+				"tomoki1207.pdf",
+				"ms-vscode-remote.remote-containers",
+				"ms-python.black-formatter"
+			]
+		}
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
