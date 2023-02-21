@@ -13,7 +13,8 @@
 				"alefragnani.project-manager",
 				"tomoki1207.pdf",
 				"ms-vscode-remote.remote-containers",
-				"ms-python.black-formatter"
+				"ms-python.black-formatter",
+				"DavidAnson.vscode-markdownlint"
 			]
 		}
 	}
