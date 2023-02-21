@@ -1,10 +1,11 @@
 limit = 5
+leave = False
 for attempt in range(limit):
     while True:
         try:
             user_entered = input("Enter score (between 0 and 1): ")
             if isinstance(user_entered, str) and user_entered.lower() == "q":
-                quit = True
+                leave = True
                 break
             score = float(user_entered)
         except ValueError:
@@ -27,5 +28,5 @@ for attempt in range(limit):
 
         print(grade)
 
-    if quit is True:
+    if leave is True:
         break
