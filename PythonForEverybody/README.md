@@ -1,9 +1,9 @@
 # Major Goal of [Book](https://www.py4e.com/book)
 
 The book is similar to *"Think Python: How to Think Like a Computer Scientist"*
- but it more focused on data compared to algorithms and abstractions.  Since
- there is more focus on data science, there is still more that can be learned
- from the *"Think Python"* book if more knowledge is wanted.
+but it more focused on data compared to algorithms and abstractions.  Since
+there is more focus on data science, there is still more that can be learned
+from the *"Think Python"* book if more knowledge is wanted.
 
 My goal is to reinforce some of the fundamentals that I skipped when I dove into
 the deep end at work getting a large (12,000 lines) program running.  I learned
@@ -52,13 +52,13 @@ that can be tried to solve whatever issue there is:
 - **Retreating**: Undo some changes and get it back to a working state.  From
   there it is possible to rebuild on a more solid foundation.  
 
- Beginners often get stuck on thinking of one type of process instead of trying
- to use the other ones.  Sometimes it might be best to keep breaking the code
- down into smaller blocks so it can be easier to find errors and then fix them.  
+Beginners often get stuck on thinking of one type of process instead of trying
+to use the other ones.  Sometimes it might be best to keep breaking the code
+down into smaller blocks so it can be easier to find errors and then fix them.  
 
- The learning process is a journey.  It is ok if it takes time to really grasp
- the different concepts and commit them to memory.  It can take time to go from
- just understanding the basics to writing full and complex programs.  
+The learning process is a journey.  It is ok if it takes time to really grasp
+the different concepts and commit them to memory.  It can take time to go from
+just understanding the basics to writing full and complex programs.  
 
 ## Chapter 2: Variables, expressions, and statements
 
