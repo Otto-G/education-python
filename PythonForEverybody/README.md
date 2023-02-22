@@ -120,13 +120,13 @@ Conditionals start by using different comparison operators and return either
 | Code       | Meaning                         |
 | ---------- | ------------------------------- |
 | x == y     | x is equal to y                 |
-| x != y     | x is __not__ equal to y         |
+| x != y     | x is **not** equal to y         |
 | x > y      | x is greater than y             |
 | x < y      | x is less than y                |
 | x >= y     | x is greater than or equal to y |
 | x <= y     | x is less than or equal to y    |
 | x is y     | x is the same as y              |
-| x is not y | x is __not__ the same as y      |
+| x is not y | x is **not** the same as y      |
 
 \* Note that there is a slight difference between `==` and `is`.  `==` will
 compare the values, but `is` will compare the whole object.  
