@@ -234,4 +234,43 @@ multiple functions within this module that can be used to create random data.
 
 ### Adding new functions
 
+While mostly built-in functions have been used so far.  It is also possible to
+define new functions that can be used.  A *function definition* specifies the
+name of a new function and the sequence of statements that are executed when
+that function is called.  This helps to reduce code duplication
 
+Example:
+
+```python
+def print_lyrics():
+    print("I'm a lumberjack, and I'm okay.")
+    print("I sleep all night and I work all day.")
+```
+
+`def` is a keyword that indications that a new function is going to be defined.
+It will be followed by the name of the function, in this case `print_lyrics`.
+Within the `()` the required arguments can be defined as needed but the is no
+need to require any if they aren't needed like in this case.  The first line of
+the function definition is called the *header* and the rest is called the
+*body*.  The *header* **must** end with a colon and the *body* **must** be
+indented.  The general convention is to use 4 spaces for indentation.  The
+function will stop being defined when there are no more lines or there is
+another line that is unindented.  
+
+Functions can be defined in Python's interactive mode where it will change from
+`>>>` to `...` in order to indicate that the definition isn't complete.  The way
+to end the function in Python's interactive mode is by entering an empty line.
+
+As Python is an object oriented language, when creating a new function, it will
+also be a variable (object) with the name of the function.  The syntax for
+calling the function is the same for the built-in functions where the previous
+function can be called by calling `print_lyrics()`.  Since it can be called, it
+can also be included in other functions like so...
+
+```python
+def repeat_lyrics():
+    print_lyrics()
+    print_lyrics()
+```
+
+### Definitions and uses
