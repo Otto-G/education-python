@@ -292,3 +292,8 @@ repeat_lyrics()
 This code defines two functions and the order of the definition matters.  In
 order for a function to be called, it must first be defined.  The code inside
 won't be run until it is called, but the definition must exist first.
+
+### Flow of execution
+
+The flow of execution is essential to understand since that is the only way to
+know how your program will run.  
