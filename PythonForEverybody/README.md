@@ -274,3 +274,21 @@ def repeat_lyrics():
 ```
 
 ### Definitions and uses
+
+To put the two code fragements together they would look like...
+
+```python
+def print_lyrics():
+    print("I'm a lumberjack, and I'm okay.")
+    print("I sleep all night and I work all day.")
+
+def repeat_lyrics():
+    print_lyrics()
+    print_lyrics()
+
+repeat_lyrics()
+```
+
+This code defines two functions and the order of the definition matters.  In
+order for a function to be called, it must first be defined.  The code inside
+won't be run until it is called, but the definition must exist first.
