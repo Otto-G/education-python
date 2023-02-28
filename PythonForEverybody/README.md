@@ -202,8 +202,12 @@ Functions are series of commands that perform some kind of computation.  When a
 funciton is defined the name and the arguments that are needed in order to
 perform the computation.  
 
+### Built-in functions
+
 There are several built-in functions in python that can be used.  Those built in
 functions should be treated as reserved words and shouldn't be used.  
+
+### Type conversion functions
 
 | Function | Action |
 | -------- | ------ |
@@ -211,10 +215,14 @@ functions should be treated as reserved words and shouldn't be used.
 | float()  | Converts strings or ints into floating point numbers |
 | str()    | Converts it's arguments into a string |
 
+### Math functions
+
 There is also a built in math module that needs to be imported in order to work
 by adding `import math` to the beginning of the python file.  This will create a
 module that is able to be used to perform different functions like
 `math.log10()` or `math.sin(math.pi)`.
+
+### Random numbers
 
 Generally it is wanted for computer programs to return the same result every
 time that the program is run making it *determininistic*.  This is normally
@@ -223,3 +231,7 @@ intruducing some randomness.  Computers have a hard time actually generating
 real random numbers, but they can generate *pseudorandom* numbers.  Python uses
 the built in module that needs to be imported `random` to do this.  There are
 multiple functions within this module that can be used to create random data.
+
+### Adding new functions
+
+
