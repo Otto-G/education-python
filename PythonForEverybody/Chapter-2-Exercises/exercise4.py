@@ -1,16 +1,17 @@
-width = 17
-height = 12.0
+"Chapter 2: Exercise 4"
+WIDTH = 17
+HEIGHT = 12.0
 
-print("width = {} \nheight = {}".format(width, height))
+print(f"width = {WIDTH} \nheight = {HEIGHT}")
 
-ans = width // 2  # Guess is 8 of type int()
-print("1. width // 2 = {} of type {}".format(ans, type(ans)))
+ANS = WIDTH // 2  # Guess is 8 of type int()
+print(f"1. width // 2 = {ANS} of type {type(ANS)}")
 
-ans = width / 2.0  # Guess is 8.5 of type float()
-print("2. width / 2.0 = {} of type {}".format(ans, type(ans)))
+ANS = WIDTH / 2.0  # Guess is 8.5 of type float()
+print(f"2. width / 2.0 = {ANS} of type {type(ANS)}")
 
-ans = height / 3  # Guess is 4 of type float()
-print("3. height / 3 = {} of type {}".format(ans, type(ans)))
+ANS = HEIGHT / 3  # Guess is 4 of type float()
+print(f"3. height / 3 = {ANS} of type {type(ANS)}")
 
-ans = 1 + 2 * 5  # Guess is 11 of type int()
-print("4. 1 + 2 * 5 = {} of type {}".format(ans, type(ans)))
+ANS = 1 + 2 * 5  # Guess is 11 of type int()
+print(f"4. 1 + 2 * 5 = {ANS} of type {type(ANS)}")

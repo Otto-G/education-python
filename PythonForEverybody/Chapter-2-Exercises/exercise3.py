@@ -1,3 +1,4 @@
+"Chapter 2: Exercise 3"
 hours = int(input("Enter Hours: "))
 pay = float(input("Enter Rate: "))
 

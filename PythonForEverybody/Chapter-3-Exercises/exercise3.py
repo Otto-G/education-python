@@ -1,32 +1,33 @@
-limit = 5
-leave = False
-for attempt in range(limit):
+"Chapter 3: Exercise 3"
+LIMIT = 5
+LEAVE = False
+for attempt in range(LIMIT):
     while True:
         try:
             user_entered = input("Enter score (between 0 and 1): ")
             if isinstance(user_entered, str) and user_entered.lower() == "q":
-                leave = True
+                LEAVE = True
                 break
             score = float(user_entered)
         except ValueError:
-            print(f"Bad input {limit - attempt - 1} tries left")
+            print(f"Bad input {LIMIT - attempt - 1} tries left")
             break
 
         if score > 1.0:
-            print(f"Bad input {limit - attempt - 1} tries left")
+            print(f"Bad input {LIMIT - attempt - 1} tries left")
             break
         if score >= 0.9:
-            grade = "A"
+            GRADE = "A"
         elif score >= 0.8:
-            grade = "B"
+            GRADE = "B"
         elif score >= 0.7:
-            grade = "C"
+            GRADE = "C"
         elif score >= 0.6:
-            grade = "D"
+            GRADE = "D"
         else:
-            grade = "F"
+            GRADE = "F"
 
-        print(grade)
+        print(GRADE)
 
-    if leave is True:
+    if LEAVE is True:
         break

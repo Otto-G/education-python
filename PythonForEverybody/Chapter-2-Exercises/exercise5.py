@@ -1,4 +1,7 @@
-def celsiusToFahrenheit(celsius: float | int) -> float:
+"Chapter 2: Exercise 5"
+
+
+def celsius_to_fahrenheit(celsius: float | int) -> float:
     """
     celsiusToFahrenheit will take a temperature as a float and will
     return the corresponding value in Fahrenheit as a float"""
@@ -8,4 +11,4 @@ def celsiusToFahrenheit(celsius: float | int) -> float:
 
 
 temperature = input("Enter the temperature in ℃\n")
-print("Temp in ℉ is {:.2f}".format(celsiusToFahrenheit(float(temperature))))
+print(f"Temp in ℉ is {celsius_to_fahrenheit(float(temperature)):.2f}")
