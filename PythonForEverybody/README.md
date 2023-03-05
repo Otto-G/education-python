@@ -349,4 +349,42 @@ variables do not exist within funcitons (except for `Class` variables).
 
 Some functions like math functions will yield results and could be described as
 fruitful functions for this book.  Other functions just perform an action like
-`print()` and then exit without returning a value.  
+`print()` and then exit without returning a value.  Normally when a function
+will return a value, it will be used later on as a new variable.  
+
+```python
+x = math.cos(math.pi)
+```
+
+WHen a function is called in an interactive window, the result will be
+displayed, but in a script nothign will happen unless the result is stored.
+Void functions might display something or have other effect, but they don't have
+any return value.  If you try to assign the result to a variable, it will only
+store none.  
+
+```python
+>>> x = print_twice(5)
+5
+5
+>>> print(x)
+None
+```
+
+From [Chapter 2](#chapter-2-variables-expressions-and-statements), None is a
+special type.  Creating a function that will return a value requires the use of
+an aptly named `return` statement.  A basic function that would return the value
+of two numbers added together could look like this.  
+
+```python
+def addtwo(a, b):
+  added = a + b
+  return added
+
+x = addtwo(3, 5)
+print(x)
+```
+
+If the above script is run, it will print out 8 because x was assigned the value
+of 8 from the return of the `addtwo` function.  The `addtwo` function took the
+arguments 3 and 5 which were added together and then passed to a `return`
+statement.  
