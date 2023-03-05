@@ -388,3 +388,18 @@ If the above script is run, it will print out 8 because x was assigned the value
 of 8 from the return of the `addtwo` function.  The `addtwo` function took the
 arguments 3 and 5 which were added together and then passed to a `return`
 statement.  
+
+### Why functons
+
+Functions have several uses
+
+- Creating functions helps to bundle statements making the program easier to
+  read and debug
+- Functions can eliminate duplicate code since it can exist in one place and be
+  run many times.  This also makes debugging or changing code easier since the
+  code will only need to be changed in one location.
+- Dividing a long program into functions makes it possible to debug or test one
+  section at a time and then assemble the all of the functions into one working
+  piece.  
+- Well designed functions are often useful for many programs.  Once they have
+  been written and debugged, it can be reused in other programs.  
