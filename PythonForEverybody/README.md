@@ -304,3 +304,43 @@ if the funciton definitions aren't all lined up in how they are executed in the
 actual program.  
 
 ### Parameters and arguments
+
+Functions are called using arguments sometimes like `math.pow(2, 3)` which is
+taking two arguments.  Those arguments are then passed into the function and
+assigned to variables called parameters.  
+
+```python
+def print_twice(bruce):
+  print(bruce)
+  print(bruce)
+```
+
+Here this function takes one argument and assigns it to the variable `bruce`.
+Whenever the function is called, it will print out the value of the parameter
+twice no matter what it is so long as it can be printed.
+
+```python
+>>> print_twice(17)
+17
+17
+>>> import math
+>>> print_twice(math.pi)
+3.141592653589793
+3.141592653589793
+```
+
+We can still use the standard rules of composition by using any kind of
+expression as an argument for the function like...
+
+```python
+>>> print_twice(math.cos(math.pi))
+-1.0
+-1.0
+```
+
+The argument will be evaluated before the funciton is called so the epression
+`math.cos(math.pi)` is only evaluated once.  You can also use variables as
+arguments.  The name of the variable that is being passed into the function has
+no impact to the variables inside of the function.  The variable will be
+assigned to whatever parameter the function has defined it to be.  Outside
+variables do not exist within funcitons (except for `Class` variables).  
