@@ -296,4 +296,11 @@ won't be run until it is called, but the definition must exist first.
 ### Flow of execution
 
 The flow of execution is essential to understand since that is the only way to
-know how your program will run.  
+know how your program will run.  Python programs will always execute from the
+first line down, but function definitions will cause the lines inside of them to
+be skipped.  This is important to know for being able to read the code as well
+as structuring it since reading strictly from the top down might not make sense
+if the funciton definitions aren't all lined up in how they are executed in the
+actual program.  
+
+### Parameters and arguments
