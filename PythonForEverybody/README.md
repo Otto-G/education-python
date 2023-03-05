@@ -344,3 +344,9 @@ arguments.  The name of the variable that is being passed into the function has
 no impact to the variables inside of the function.  The variable will be
 assigned to whatever parameter the function has defined it to be.  Outside
 variables do not exist within funcitons (except for `Class` variables).  
+
+### Fruitful functions and void functions
+
+Some functions like math functions will yield results and could be described as
+fruitful functions for this book.  Other functions just perform an action like
+`print()` and then exit without returning a value.  
