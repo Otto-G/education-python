@@ -403,3 +403,17 @@ Functions have several uses
   piece.  
 - Well designed functions are often useful for many programs.  Once they have
   been written and debugged, it can be reused in other programs.  
+
+## Chapter 5: Iteration
+
+### Updating variables
+
+It is common to want to update a variable based on it's existing value such as
+`x = x + 1`.  In order for this statement to work in Python, `x` must already
+exist since it is required to be known in order to calculate the new value.
+This can be done by first assigning a value to it such as:
+
+```python
+x = 0
+x = x + 1
+```
