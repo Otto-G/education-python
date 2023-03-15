@@ -504,3 +504,6 @@ This code will run forever and echo out the input unless the input starts with
 `#` where that will be skipped and another input will be requested.  
 
 ### Definite loops using `for`
+
+If there is a need to loop through a list of things, using a `for` loop can be a
+better option.  
