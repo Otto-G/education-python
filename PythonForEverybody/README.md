@@ -481,3 +481,26 @@ print("Done!")
 This code will ask for user input until the word "done" is typed in.  When the
 word "done" is typed in, the `if` statement will return as `True` and then break
 out of the loop.  
+
+### Finishing iterations with `continue`
+
+Sometimes it might be desired to immedietly end an iteration based on some
+condition and immedietly start a new iteration.  The statement to do this is
+`continue`. When `continue` is passed, the iteration will immedietly stop and
+loop back to the start of the loop.
+
+```python
+while True:
+  line = input("> ")
+  if line[0] == "#":
+    continue
+  if line == "done":
+    break
+  print(line)
+print("Done!")
+```
+
+This code will run forever and echo out the input unless the input starts with
+`#` where that will be skipped and another input will be requested.  
+
+### Definite loops using `for`
