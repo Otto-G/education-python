@@ -506,4 +506,24 @@ This code will run forever and echo out the input unless the input starts with
 ### Definite loops using `for`
 
 If there is a need to loop through a list of things, using a `for` loop can be a
-better option.  
+better option.  These are called *definite* loops since the loop will last only
+as long as the list of things to iterate through.  
+
+```python
+friends = ["Joseph", "Glenn", "Sally"]
+for friend in friends:
+  print("Happy New Year:", friend)
+print("Done!")
+```
+
+As this example shows, the syntax for a `for` loop is very similar to a `while`
+loop. This example created a list of `friends` and then for every iteration of
+the `for` loop, one of the friends would be assigned to the variable `friend`
+starting at `friends[0]` or "Joseph" and going until all of the `friends` had
+gone through the loop.  This takes 3 loops to accomplish in total.  
+
+It is important to note that `for` and `in` are reserved words in python.  `for`
+designates that a loop will be made and `friend` is the *iteration variable*
+that will iterate through the different elements `in` `friends`.  
+
+### Loop patterns
