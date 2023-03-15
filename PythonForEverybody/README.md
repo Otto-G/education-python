@@ -416,4 +416,68 @@ This can be done by first assigning a value to it such as:
 ```python
 x = 0
 x = x + 1
+x += 1
 ```
+
+### The `while` statement
+
+Since doing repetitive tasks is something that computers do very well, python
+has severl features to make it easier.  
+
+One form is using `while` statements.  They will continue to run so long as the
+statement following `while` is true.  See the example code block:
+
+```python
+n = 5
+while n > 0:
+  print(n)
+  n -= 1
+print("Blastoff")
+```
+
+It is possible to mostly read while statements like standard English.  Just like
+`if` statements, the code that is run within the loop must be indented.  For
+this example, it sets `n` to 5 and then evaluates if it is greater than 0.
+Since this returns true, it will print the value and subtract 1.  From there it
+returns to the beginning and evaluates if `n` (now 4) is greater than 0.  This
+pattern continues until `n=0` and the `while` statement returns false.  At that
+point it goes to the next unindented line and prints out "Blastoff".  
+
+Every time that the `while` statement is evaluated is a new iteration and every
+time that it returns to the initial `while` statement is a loop.  It is
+importatnt to make sure that there is an end to the loop by some variable that
+will change every loop which will make the `while` statement return false.  The
+variable that is changed can be called the *iteration* variable.  If there is no
+*iteration variable* or some other signal that will eventually cause an exit,
+the loop will be an *infinite loop*
+
+### Infinite loops
+
+Infinite loops will go on forever unless there is a `break` statement called in
+the middle of the loop somewhere.  Code such as:
+
+```python
+n = 10
+while True:
+  print(n, end=" ")
+  n -= 1
+print("Done!")
+```
+
+Will run forever and never exit until the program is manually terminated
+somehow.  Ctrl+C or closing the program are the two main ways to manually close
+programs that have ended up going on with no end.  Building infinite loops with
+ways to end the loop can be useful.  
+
+```python
+while True:
+  line = input("> ")
+  if line == "done":
+    break
+  print(line)
+print("Done!")
+```
+
+This code will ask for user input until the word "done" is typed in.  When the
+word "done" is typed in, the `if` statement will return as `True` and then break
+out of the loop.  
