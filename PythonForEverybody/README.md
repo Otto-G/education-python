@@ -406,7 +406,7 @@ Functions have several uses
 
 ## Chapter 5: Iteration
 
-### Updating variables
+### 5.1 Updating variables
 
 It is common to want to update a variable based on it's existing value such as
 `x = x + 1`.  In order for this statement to work in Python, `x` must already
@@ -419,7 +419,7 @@ x = x + 1
 x += 1
 ```
 
-### The `while` statement
+### 5.2 The `while` statement
 
 Since doing repetitive tasks is something that computers do very well, python
 has severl features to make it easier.  
@@ -451,7 +451,7 @@ variable that is changed can be called the *iteration* variable.  If there is no
 *iteration variable* or some other signal that will eventually cause an exit,
 the loop will be an *infinite loop*
 
-### Infinite loops
+### 5.3 Infinite loops
 
 Infinite loops will go on forever unless there is a `break` statement called in
 the middle of the loop somewhere.  Code such as:
@@ -482,7 +482,7 @@ This code will ask for user input until the word "done" is typed in.  When the
 word "done" is typed in, the `if` statement will return as `True` and then break
 out of the loop.  
 
-### Finishing iterations with `continue`
+### 5.4 Finishing iterations with `continue`
 
 Sometimes it might be desired to immedietly end an iteration based on some
 condition and immedietly start a new iteration.  The statement to do this is
@@ -503,7 +503,7 @@ print("Done!")
 This code will run forever and echo out the input unless the input starts with
 `#` where that will be skipped and another input will be requested.  
 
-### Definite loops using `for`
+### 5.5 Definite loops using `for`
 
 If there is a need to loop through a list of things, using a `for` loop can be a
 better option.  These are called *definite* loops since the loop will last only
@@ -526,4 +526,4 @@ It is important to note that `for` and `in` are reserved words in python.  `for`
 designates that a loop will be made and `friend` is the *iteration variable*
 that will iterate through the different elements `in` `friends`.  
 
-### Loop patterns
+### 5.6 Loop patterns
