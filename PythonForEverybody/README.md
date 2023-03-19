@@ -547,3 +547,6 @@ for itervar in [3, 41, 12, 9, 74, 15]:
 
 print("Count: ", count)
 ```
+
+The statement is initialized with `count = 0` so that the veriable exists and
+the starting value is 0.  
