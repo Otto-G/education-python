@@ -527,3 +527,23 @@ designates that a loop will be made and `friend` is the *iteration variable*
 that will iterate through the different elements `in` `friends`.  
 
 ### 5.6 Loop patterns
+
+Normally loops are used when there is a desire to go through a list of items or
+the contents of a file.  The loops are generally started by:
+
+- Initializing one or more variables before the loop starts
+- Performing some computation on each item in the loop body, possibly changing
+the variables in the body of the loop
+- Looking at the resulting variables when the loop completes
+
+#### 5.6.1 Counting and summing loops
+
+To count the number of items in a list a `for` loop can be used
+
+```python
+count = 0
+for itervar in [3, 41, 12, 9, 74, 15]:
+  count += 1
+
+print("Count: ", count)
+```
