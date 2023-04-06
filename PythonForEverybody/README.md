@@ -634,3 +634,32 @@ def min(values):
 
 The `print()` statements have been removed and since there isn't a desire to
 print out the loop number, enumerate has also been removed.  
+
+#### 5.7 Debugging
+
+As you start writing larger and larger programs, there is probably going to be a
+need to spend more time debugging.  More code means that there are more chances
+for an error to pop up.  One way of debugging instead of going line by line
+which can become excessive is to start in the middle.  This way you can know if
+there is an error in the first half or the second half of your program.  This
+process can be repeated until you are able to narrow down the cause of the
+error.  In theory, this would reduce a maximum 100 step process into a maximum 6
+step proces.  
+
+It isn't always clear where the middle point is or even if it's possible to
+check there, but this gives a process that is better than going line by line.  
+
+#### 5.8 Glossary
+
+- **accumulator** A variable used in a loop to add up or accumulate a result.
+- **counter** A variable used in a loop to count the number of times something
+    hap- pened. We initialize a counter to zero and then increment the counter
+    each time we want to “count” something.
+- **decrement** An update that decreases the value of a variable.
+- **initialize** An assignment that gives an initial value to a variable that
+  will be updated.
+- **increment** An update that increases the value of a variable (often by one).
+- **infinite loop** A loop in which the terminating condition is never satisfied
+  or for which there is no terminating condition.
+- **iteration** Repeated execution of a set of statements using either a
+  function that calls itself or a loop.
