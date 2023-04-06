@@ -663,3 +663,7 @@ check there, but this gives a process that is better than going line by line.
   or for which there is no terminating condition.
 - **iteration** Repeated execution of a set of statements using either a
   function that calls itself or a loop.
+
+## Chapter 6: Strings
+
+### 6.1 A string is a sequence
