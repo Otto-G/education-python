@@ -549,4 +549,88 @@ print("Count: ", count)
 ```
 
 The statement is initialized with `count = 0` so that the veriable exists and
-the starting value is 0.  
+the starting value is 0.  itervar is the *iteration* variable that is used to
+iterate through the loop.  The value that it is stored as (the values in the
+list) isn't being used in the code but it is available in the body of the `for`
+loop.  The body of the `for` loop is just using the `count` variable and adding
+1 to it each loop.  Once the loop is finished, the final value of `count` is
+printed out.  
+
+A similar loop that would find the total of all of the values in the list would
+look like:
+
+```python
+total = 0
+for itervar in [3, 41, 12, 9, 74, 15]:
+  total += itervar
+
+print(f"Total = {total}")
+```
+
+This example uses the `iteration variable`, `itervar`, by adding it's value to
+total which was defined outside of the loop body so that there wouldn't be an
+error when it was added to within the body.  These code snippits aren't very
+useful since the built in `len()` and `sum()` are able to perform the same
+function.  In general it is best to rely on the builtin functions of python
+since they have had more optimization applied to them than creating a new method
+of doing something routine.  
+
+#### 5.6.2 Maximum and minimum loops
+
+To find the largest value in a list we can create a loop like so:
+
+```python
+largest = None
+print(f"Before: {largest}")
+for i, itervar in enumerate([3, 41, 12, 9, 74, 15]):
+  # enumerate will return the position as well as the value of a list in a for 
+  # loop.  The first value will indicate the position/loop number and itervar 
+  # will be the value at that point.  
+
+  if largest is None or itervar > largest:
+    # this will run only if either largest is None or if the current itervar
+    # is more than the current largest value we have seen.  Since the list 
+    # starts with 3, largest will first be assigned to 3 and then when 41 shows 
+    # up next that will be greater than 3 so largest will be reassigned.  The 
+    # next value 12 is less than 41 so largest will not be assigned.  
+
+    largest = itervar
+  print(f"Loop {i}: itervar = {itervar}: largest = {largest}")
+print(f"Largest = {largest}")
+```
+
+The variable `largest` can be thought of as the largest value that has been seen
+up until that point in time.  Before the loop, the value is set to `None` which
+is a special value that is the same as "empty".  
+
+Changing this code to find the smallest only takes one small change (also
+changing the variable names for clarity).
+
+```python
+smallest = None
+print(f"Before: {smallest}")
+for i, itervar in enumerate([3, 41, 12, 9, 74, 15]):
+  if smallest is None or itervar < smallest:
+    # The only real change here is changing the greater than sign for a less 
+    # than sign.  The logic is otherwise the exact same.  
+
+    smallest = itervar
+  print(f"Loop {i}: itervar = {itervar}: smallest = {smallest}")
+print(f"Smallest = {smallest}")
+```
+
+These bits of code are also not needed since Python has built-in `max()` and
+`min()` functions that make hand writing loops unessairy.  A simple version of
+the Python built-in `min()` function would look like:
+
+```python
+def min(values):
+  smallest = None
+  for value in values:
+    if smallest is None or value < smallest:
+      smallest = value
+  return smallest
+```
+
+The `print()` statements have been removed and since there isn't a desire to
+print out the loop number, enumerate has also been removed.  
