@@ -721,3 +721,13 @@ while index < len(fruit):
 This loop will traverse the variable `fruit` until the index is the same as the
 length of the variable `fruit`.  The last character printed here would be
 `fruit[len(fruit)-1]` because the index is incremented after the call.  
+
+Another way to write a traversal loop is by usig a `for` loop:
+
+```python
+for char in fruit:
+  print(char)
+```
+
+Each time through the loop, the next character in the string will be assigned to
+the variable `char` and it will continue until there are no characters left.  
