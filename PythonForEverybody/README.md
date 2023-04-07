@@ -701,3 +701,23 @@ letter it would be needed to subtract 1 from the result like
 An alternative option would be to use native indicies which count backward from
 the end.  `fruit[-1]` would yield the last letter while `fruit[-2]` would yield
 the second to last letter.  
+
+#### 6.3 Traversal through a string with a loop
+
+There can be many reasons to process a string one character at a time.  They
+would normally start at the beginning, select each character and do something
+and repeat until the end.  This is called a *traversal*.  One way to write a
+*traversal* is by using a `while` loop:
+
+```python
+index = 0
+fruit = "banana"
+while index < len(fruit):
+  letter = fruit[index]
+  print(letter)
+  index += 1
+```
+
+This loop will traverse the variable `fruit` until the index is the same as the
+length of the variable `fruit`.  The last character printed here would be
+`fruit[len(fruit)-1]` because the index is incremented after the call.  
