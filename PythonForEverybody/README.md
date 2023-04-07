@@ -681,3 +681,23 @@ a
 The second statement in the above code extracts the letter at index position 1
 and assigns that value to letter.   Note that Python uses zero indexing so index
 position 0 would return "b".  
+
+#### 6.2 Getting the length of a string using `len`
+
+`len` is a built-in functino that returns the number of characters in a string.
+
+```python
+>>> fruit = "banana"
+>>> len(fruit)
+6
+```
+
+To get the last letter of a string it might be tempting to use
+`last = fruit[len(fruit)]` but that would result in an `IndexError` since the
+length of the variable is one larger than the index value.  To get the last
+letter it would be needed to subtract 1 from the result like
+`last = fruit[len(fruit)-1]`.  
+
+An alternative option would be to use native indicies which count backward from
+the end.  `fruit[-1]` would yield the last letter while `fruit[-2]` would yield
+the second to last letter.  
