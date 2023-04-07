@@ -667,3 +667,17 @@ check there, but this gives a process that is better than going line by line.
 ## Chapter 6: Strings
 
 ### 6.1 A string is a sequence
+
+A string is a *sequence of characters.  Using a bracket operator, it is possble
+to access characters by their location.
+
+```python
+>>> fruit = "banana"
+>>> letter = fruit[1]
+>>> print(letter)
+a
+```
+
+The second statement in the above code extracts the letter at index position 1
+and assigns that value to letter.   Note that Python uses zero indexing so index
+position 0 would return "b".  
