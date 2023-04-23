@@ -15,7 +15,8 @@
 				"ms-vscode-remote.remote-containers",
 				"ms-python.black-formatter",
 				"DavidAnson.vscode-markdownlint",
-				"eamodio.gitlens"
+				"eamodio.gitlens",
+				"streetsidesoftware.code-spell-checker"
 			]
 		}
 	}
