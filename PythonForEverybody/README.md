@@ -199,7 +199,7 @@ False
 ## Chapter 4: Functions
 
 Functions are series of commands that perform some kind of computation.  When a
-funciton is defined the name and the arguments that are needed in order to
+function is defined the name and the arguments that are needed in order to
 perform the computation.  
 
 ### Built-in functions
@@ -211,8 +211,8 @@ functions should be treated as reserved words and shouldn't be used.
 
 | Function | Action |
 | -------- | ------ |
-| int()    | Takes strings or floats and turns them into ints.  Note that it just chops off the end of the number instead of rounding |
-| float()  | Converts strings or ints into floating point numbers |
+| int()    | Takes strings or floats and turns them into an int.  Note that it just chops off the end of the number instead of rounding |
+| float()  | Converts strings or int into floating point numbers |
 | str()    | Converts it's arguments into a string |
 
 ### Math functions
@@ -225,9 +225,9 @@ module that is able to be used to perform different functions like
 ### Random numbers
 
 Generally it is wanted for computer programs to return the same result every
-time that the program is run making it *determininistic*.  This is normally
-good, but sometimes it is desired to have *nondetermininistic* results by
-intruducing some randomness.  Computers have a hard time actually generating
+time that the program is run making it *deterministic*.  This is normally
+good, but sometimes it is desired to have *nondeterministic* results by
+introducing some randomness.  Computers have a hard time actually generating
 real random numbers, but they can generate *pseudorandom* numbers.  Python uses
 the built in module that needs to be imported `random` to do this.  There are
 multiple functions within this module that can be used to create random data.
@@ -255,7 +255,7 @@ the function definition is called the *header* and the rest is called the
 *body*.  The *header* **must** end with a colon and the *body* **must** be
 indented.  The general convention is to use 4 spaces for indentation.  The
 function will stop being defined when there are no more lines or there is
-another line that is unindented.  
+another line that is un-indented.  
 
 Functions can be defined in Python's interactive mode where it will change from
 `>>>` to `...` in order to indicate that the definition isn't complete.  The way
@@ -275,7 +275,7 @@ def repeat_lyrics():
 
 ### Definitions and uses
 
-To put the two code fragements together they would look like...
+To put the two code fragments together they would look like...
 
 ```python
 def print_lyrics():
@@ -300,7 +300,7 @@ know how your program will run.  Python programs will always execute from the
 first line down, but function definitions will cause the lines inside of them to
 be skipped.  This is important to know for being able to read the code as well
 as structuring it since reading strictly from the top down might not make sense
-if the funciton definitions aren't all lined up in how they are executed in the
+if the function definitions aren't all lined up in how they are executed in the
 actual program.  
 
 ### Parameters and arguments
@@ -338,12 +338,12 @@ expression as an argument for the function like...
 -1.0
 ```
 
-The argument will be evaluated before the funciton is called so the epression
+The argument will be evaluated before the function is called so the expression
 `math.cos(math.pi)` is only evaluated once.  You can also use variables as
 arguments.  The name of the variable that is being passed into the function has
 no impact to the variables inside of the function.  The variable will be
 assigned to whatever parameter the function has defined it to be.  Outside
-variables do not exist within funcitons (except for `Class` variables).  
+variables do not exist within functions (except for `Class` variables).  
 
 ### Fruitful functions and void functions
 
@@ -357,7 +357,7 @@ x = math.cos(math.pi)
 ```
 
 WHen a function is called in an interactive window, the result will be
-displayed, but in a script nothign will happen unless the result is stored.
+displayed, but in a script nothing will happen unless the result is stored.
 Void functions might display something or have other effect, but they don't have
 any return value.  If you try to assign the result to a variable, it will only
 store none.  
@@ -376,20 +376,20 @@ an aptly named `return` statement.  A basic function that would return the value
 of two numbers added together could look like this.  
 
 ```python
-def addtwo(a, b):
+def add_two(a, b):
   added = a + b
   return added
 
-x = addtwo(3, 5)
+x = add_two(3, 5)
 print(x)
 ```
 
 If the above script is run, it will print out 8 because x was assigned the value
-of 8 from the return of the `addtwo` function.  The `addtwo` function took the
+of 8 from the return of the `add_two` function.  The `add_two` function took the
 arguments 3 and 5 which were added together and then passed to a `return`
 statement.  
 
-### Why functons
+### Why functions
 
 Functions have several uses
 
@@ -422,7 +422,7 @@ x += 1
 ### 5.2 The `while` statement
 
 Since doing repetitive tasks is something that computers do very well, python
-has severl features to make it easier.  
+has several features to make it easier.  
 
 One form is using `while` statements.  They will continue to run so long as the
 statement following `while` is true.  See the example code block:
@@ -441,11 +441,11 @@ this example, it sets `n` to 5 and then evaluates if it is greater than 0.
 Since this returns true, it will print the value and subtract 1.  From there it
 returns to the beginning and evaluates if `n` (now 4) is greater than 0.  This
 pattern continues until `n=0` and the `while` statement returns false.  At that
-point it goes to the next unindented line and prints out "Blastoff".  
+point it goes to the next un-indented line and prints out "Blastoff".  
 
 Every time that the `while` statement is evaluated is a new iteration and every
 time that it returns to the initial `while` statement is a loop.  It is
-importatnt to make sure that there is an end to the loop by some variable that
+important to make sure that there is an end to the loop by some variable that
 will change every loop which will make the `while` statement return false.  The
 variable that is changed can be called the *iteration* variable.  If there is no
 *iteration variable* or some other signal that will eventually cause an exit,
@@ -484,9 +484,9 @@ out of the loop.
 
 ### 5.4 Finishing iterations with `continue`
 
-Sometimes it might be desired to immedietly end an iteration based on some
-condition and immedietly start a new iteration.  The statement to do this is
-`continue`. When `continue` is passed, the iteration will immedietly stop and
+Sometimes it might be desired to immediately end an iteration based on some
+condition and immediately start a new iteration.  The statement to do this is
+`continue`. When `continue` is passed, the iteration will immediately stop and
 loop back to the start of the loop.
 
 ```python
@@ -542,14 +542,14 @@ To count the number of items in a list a `for` loop can be used
 
 ```python
 count = 0
-for itervar in [3, 41, 12, 9, 74, 15]:
+for iter_var in [3, 41, 12, 9, 74, 15]:
   count += 1
 
 print("Count: ", count)
 ```
 
-The statement is initialized with `count = 0` so that the veriable exists and
-the starting value is 0.  itervar is the *iteration* variable that is used to
+The statement is initialized with `count = 0` so that the variable exists and
+the starting value is 0.  iter_var is the *iteration* variable that is used to
 iterate through the loop.  The value that it is stored as (the values in the
 list) isn't being used in the code but it is available in the body of the `for`
 loop.  The body of the `for` loop is just using the `count` variable and adding
@@ -561,15 +561,15 @@ look like:
 
 ```python
 total = 0
-for itervar in [3, 41, 12, 9, 74, 15]:
-  total += itervar
+for iter_var in [3, 41, 12, 9, 74, 15]:
+  total += iter_var
 
 print(f"Total = {total}")
 ```
 
-This example uses the `iteration variable`, `itervar`, by adding it's value to
+This example uses the `iteration variable`, `iter_var`, by adding it's value to
 total which was defined outside of the loop body so that there wouldn't be an
-error when it was added to within the body.  These code snippits aren't very
+error when it was added to within the body.  These code snippets aren't very
 useful since the built in `len()` and `sum()` are able to perform the same
 function.  In general it is best to rely on the builtin functions of python
 since they have had more optimization applied to them than creating a new method
@@ -582,20 +582,20 @@ To find the largest value in a list we can create a loop like so:
 ```python
 largest = None
 print(f"Before: {largest}")
-for i, itervar in enumerate([3, 41, 12, 9, 74, 15]):
+for i, iter_var in enumerate([3, 41, 12, 9, 74, 15]):
   # enumerate will return the position as well as the value of a list in a for 
-  # loop.  The first value will indicate the position/loop number and itervar 
+  # loop.  The first value will indicate the position/loop number and iter_var 
   # will be the value at that point.  
 
-  if largest is None or itervar > largest:
-    # this will run only if either largest is None or if the current itervar
+  if largest is None or iter_var > largest:
+    # this will run only if either largest is None or if the current iter_var
     # is more than the current largest value we have seen.  Since the list 
     # starts with 3, largest will first be assigned to 3 and then when 41 shows 
     # up next that will be greater than 3 so largest will be reassigned.  The 
     # next value 12 is less than 41 so largest will not be assigned.  
 
-    largest = itervar
-  print(f"Loop {i}: itervar = {itervar}: largest = {largest}")
+    largest = iter_var
+  print(f"Loop {i}: iter_var = {iter_var}: largest = {largest}")
 print(f"Largest = {largest}")
 ```
 
@@ -609,18 +609,18 @@ changing the variable names for clarity).
 ```python
 smallest = None
 print(f"Before: {smallest}")
-for i, itervar in enumerate([3, 41, 12, 9, 74, 15]):
-  if smallest is None or itervar < smallest:
+for i, iter_var in enumerate([3, 41, 12, 9, 74, 15]):
+  if smallest is None or iter_var < smallest:
     # The only real change here is changing the greater than sign for a less 
     # than sign.  The logic is otherwise the exact same.  
 
-    smallest = itervar
-  print(f"Loop {i}: itervar = {itervar}: smallest = {smallest}")
+    smallest = iter_var
+  print(f"Loop {i}: iter_var = {iter_var}: smallest = {smallest}")
 print(f"Smallest = {smallest}")
 ```
 
 These bits of code are also not needed since Python has built-in `max()` and
-`min()` functions that make hand writing loops unessairy.  A simple version of
+`min()` functions that make hand writing loops unnecessary.  A simple version of
 the Python built-in `min()` function would look like:
 
 ```python
@@ -644,7 +644,7 @@ which can become excessive is to start in the middle.  This way you can know if
 there is an error in the first half or the second half of your program.  This
 process can be repeated until you are able to narrow down the cause of the
 error.  In theory, this would reduce a maximum 100 step process into a maximum 6
-step proces.  
+step process.  
 
 It isn't always clear where the middle point is or even if it's possible to
 check there, but this gives a process that is better than going line by line.  
@@ -653,7 +653,7 @@ check there, but this gives a process that is better than going line by line.
 
 - **accumulator** A variable used in a loop to add up or accumulate a result.
 - **counter** A variable used in a loop to count the number of times something
-    hap- pened. We initialize a counter to zero and then increment the counter
+    happened. We initialize a counter to zero and then increment the counter
     each time we want to “count” something.
 - **decrement** An update that decreases the value of a variable.
 - **initialize** An assignment that gives an initial value to a variable that
@@ -668,7 +668,7 @@ check there, but this gives a process that is better than going line by line.
 
 ### 6.1 A string is a sequence
 
-A string is a *sequence of characters.  Using a bracket operator, it is possble
+A string is a *sequence of characters.  Using a bracket operator, it is possible
 to access characters by their location.
 
 ```python
@@ -684,7 +684,7 @@ position 0 would return "b".
 
 #### 6.2 Getting the length of a string using `len`
 
-`len` is a built-in functino that returns the number of characters in a string.
+`len` is a built-in function that returns the number of characters in a string.
 
 ```python
 >>> fruit = "banana"
@@ -698,7 +698,7 @@ length of the variable is one larger than the index value.  To get the last
 letter it would be needed to subtract 1 from the result like
 `last = fruit[len(fruit)-1]`.  
 
-An alternative option would be to use native indicies which count backward from
+An alternative option would be to use native indices which count backward from
 the end.  `fruit[-1]` would yield the last letter while `fruit[-2]` would yield
 the second to last letter.  
 
@@ -722,7 +722,7 @@ This loop will traverse the variable `fruit` until the index is the same as the
 length of the variable `fruit`.  The last character printed here would be
 `fruit[len(fruit)-1]` because the index is incremented after the call.  
 
-Another way to write a traversal loop is by usig a `for` loop:
+Another way to write a traversal loop is by using a `for` loop:
 
 ```python
 for char in fruit:
@@ -731,3 +731,8 @@ for char in fruit:
 
 Each time through the loop, the next character in the string will be assigned to
 the variable `char` and it will continue until there are no characters left.  
+
+#### 6.4 String slices
+
+Strings can be spit into a segment called a *slice*.  Selecting them is similar
+to selecting a character but a range is given instead of a single index.  
