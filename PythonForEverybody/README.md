@@ -768,4 +768,6 @@ If the first index is greater than or equal to the second, the result is an
 ```
 
 An empty string has no length and contains no characters but other than that it
-is the same as any other string. 
+is the same as any other string.
+
+#### 6.5 Strings are immutable
