@@ -736,3 +736,36 @@ the variable `char` and it will continue until there are no characters left.
 
 Strings can be spit into a segment called a *slice*.  Selecting them is similar
 to selecting a character but a range is given instead of a single index.  
+
+```python
+>>> string = 'Monty Python'
+>>> print(string[0:5])
+Monty
+>>> print(string[6:12])
+Python
+```
+
+The operator `[n:m]` returns the string that starts at the n-th character to the
+m-th character including the first, but excluding the last.  If the first index
+is omitted then the slice will stat at the beginning of the string but if the
+second is omitted then it will continue to the end.  
+
+```python
+>>> fruit = 'banana'
+>>> fruit[:3]
+'ban'
+>>> fruit[3:]
+'ana'
+```
+
+If the first index is greater than or equal to the second, the result is an
+*empty* string represented by two quotation marks:
+
+```python
+>>> fruit = 'banana'
+>>> fruit[3:3]
+''
+```
+
+An empty string has no length and contains no characters but other than that it
+is the same as any other string. 
