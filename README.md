@@ -42,10 +42,10 @@ isolated.
 
 Run with `> time python Mandelbrot-benchmark.py 16000 > /dev/null`
 
-| Computer | Time m:ss | Percentage from Best |
-| :-- | --: | --: |
-| Macbook Pro 14" M1-pro (system python 3.11) | 42.6 | 57% |
-| Ncase M1 - 5600x (dev container) | 1:15 | 100% |
-| Macbook Pro 14" M1-pro (dev container) | 1:17 | 103% |
-| Dell 5420 i7-1185g7 | 1:53 | 151% |
-| iPad Air 4 | 6:30 | 520% |
+| Computer                                    | Time m:ss | Percentage from Best |
+|:--------------------------------------------|----------:|---------------------:|
+| Macbook Pro 14" M1-pro (system python 3.11) |      42.6 |                  57% |
+| Ncase M1 - 5600x (dev container)            |      1:15 |                 100% |
+| Macbook Pro 14" M1-pro (dev container)      |      1:17 |                 103% |
+| Dell 5420 i7-1185g7                         |      1:53 |                 151% |
+| iPad Air 4                                  |      6:30 |                 520% |
