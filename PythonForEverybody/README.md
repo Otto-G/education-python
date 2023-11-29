@@ -67,7 +67,7 @@ just understanding the basics to writing full and complex programs.
  keywords...
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> |
-| ---      | ---      | ---      | ---      | ---      |
+|----------|----------|----------|----------|----------|
 | and      | del      | from     | None     | True     |
 | as       | elif     | global   | nonlocal | try      |
 | assert   | else     | if       | not      | while    |
@@ -118,7 +118,7 @@ Conditionals start by using different comparison operators and return either
 `True` or `False`.  
 
 | Code       | Meaning                         |
-| ---------- | ------------------------------- |
+|------------|---------------------------------|
 | x == y     | x is equal to y                 |
 | x != y     | x is **not** equal to y         |
 | x > y      | x is greater than y             |
@@ -209,11 +209,11 @@ functions should be treated as reserved words and shouldn't be used.
 
 ### Type conversion functions
 
-| Function | Action |
-| -------- | ------ |
+| Function | Action                                                                                                                     |
+|----------|----------------------------------------------------------------------------------------------------------------------------|
 | int()    | Takes strings or floats and turns them into an int.  Note that it just chops off the end of the number instead of rounding |
-| float()  | Converts strings or int into floating point numbers |
-| str()    | Converts it's arguments into a string |
+| float()  | Converts strings or int into floating point numbers                                                                        |
+| str()    | Converts it's arguments into a string                                                                                      |
 
 ### Math functions
 
